@@ -274,7 +274,7 @@ var Slider = React.createClass({
         <Animated.View style={[mainStyles.track, trackStyle, minimumTrackStyle]} />
         <Animated.View
           onLayout={this._measureThumb}
-          hitSlop={top: 5, left: 5, bottom: 5, right: 5} 
+          hitSlop={{top: 5, left: 5, bottom: 5, right: 5}} 
           style={[
             {backgroundColor: thumbTintColor},
             mainStyles.thumb, thumbStyle,
